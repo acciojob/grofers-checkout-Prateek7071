@@ -5,7 +5,7 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 //Add your code here
-  const prices = document.querySelectorAll('.prices')
+  const prices = document.querySelectorAll('.price')
   let sum = 0
 
   prices.forEach(e=>{
@@ -19,7 +19,7 @@ const getSum = () => {
     <td colspan="2">${sum}</td>
     `
   tablee.appendChild(newRow)
-
+  newRow.setAttribute("id",'ans')
 };
 
 getSumBtn.addEventListener("click", getSum);
